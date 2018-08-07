@@ -7,5 +7,9 @@ public class App{
         list.insert(11);
         list.insert(12);
         list.traverseList();
+        list.remove(1);
+        System.out.println();
+        list.traverseList();
+
     }
 }
