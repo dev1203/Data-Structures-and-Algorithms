@@ -1,3 +1,11 @@
+    # - This is an implementation of linked list with int.
+    # - Methods: 
+    # - insert(data) : will insert at the front;
+    # - insertAtEnd(data) : will insert at the end;
+    # - remove() : will remove a given data
+    # - print() : will traverse the whole linked list
+    # - getSize() : will return the size
+
 class LinkedList(object):
     def __init__(self):
         self.head = None
