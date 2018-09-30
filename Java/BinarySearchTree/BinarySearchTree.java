@@ -6,13 +6,14 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T>{
         if (root!=null){
             traverseInOrder(root);
         }
+        System.out.println();
     }
     public void traverseInOrder(Node<T> node){
         if(node.getLeftChild() != null){
         traverseInOrder(node.getLeftChild());
         }
-        System.out.println(node+" -->");
-        if(node.getLeftChild() != null){
+        System.out.print(node+" -->");
+        if(node.getRightChild() != null){
             traverseInOrder(node.getRightChild());
         }
     }
@@ -35,7 +36,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T>{
     */
     @Override
     public void insertNode(T newdata,Node<T> currentNode){
-        if(newdata.compareTo(currentNode.getData())<0){
+        if(newdata.compareTo(currentNode.getData()) < 0){
             // Smaller that means insert at right
             if(currentNode.getLeftChild() != null){
                 insertNode(newdata, currentNode.getLeftChild());
