@@ -9,6 +9,7 @@ public class App{
         bst.traversal();
         System.out.println(bst.getMin());
         System.out.println(bst.getMax());
-
+        bst.delete(112121210);
+        bst.traversal();
     }
 }
